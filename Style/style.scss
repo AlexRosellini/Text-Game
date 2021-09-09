@@ -1,0 +1,121 @@
+/***************************************************/
+//base
+
+::before, ::after {
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6, p, button {
+
+    color: white;
+    font-size: 18px;
+
+}
+
+/***************************************************/
+
+.game-proper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 80vh;
+}
+
+
+/***************************************************/
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: gray;
+    height: 20vh;
+    
+    & button {
+        padding: 10px;
+        margin-left: 40px;
+        background-color: rgb(51, 50, 50);
+    }
+}
+
+.character-bar {
+    display: flex;
+    flex-direction: row;
+
+    & p {
+        padding-left: 40px;
+        font-size: 18px;
+    }
+}
+
+/***************************************************/
+
+span {
+    font-weight: bolder;
+}
+
+.text-orange {
+    color: rgb(238, 158, 11);
+}
+
+.text-darker-orange {
+    color: orange
+}
+
+/***************************************************/
+//animation
+.textl1 {
+    animation: text 1s, linear forwards;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.textl2 {
+    animation: text 1s, linear forwards;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+
+}
+
+.textl3 {
+    animation: text 1s, linear forwards;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+
+}
+
+.textl4 {
+    animation: text 1s, linear forwards;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+    color: rgb(240, 4, 4);
+    background-color: rgb(192, 191, 191);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+
+@keyframes text {
+
+    0% {
+        opacity:0;
+        transform:  translate(0px,-25px);
+      }
+      100% {
+        opacity:1;
+        transform:  translate(0px,0px);
+      }
+    
+}

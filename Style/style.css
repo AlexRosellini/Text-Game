@@ -1,0 +1,157 @@
+/***************************************************/
+::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: roboto;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6, p, button {
+  color: white;
+  font-size: 18px;
+}
+
+/***************************************************/
+.game-proper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 80vh;
+}
+
+/***************************************************/
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: gray;
+  height: 20vh;
+}
+
+.options button {
+  padding: 10px;
+  margin-left: 40px;
+  background-color: #333232;
+}
+
+.character-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.character-bar p {
+  padding-left: 40px;
+  font-size: 18px;
+}
+
+/***************************************************/
+span {
+  font-weight: bolder;
+}
+
+.text-orange {
+  color: #ee9e0b;
+}
+
+.text-darker-orange {
+  color: orange;
+}
+
+/***************************************************/
+.textl1 {
+  -webkit-animation: text 1s, linear forwards;
+          animation: text 1s, linear forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.textl2 {
+  -webkit-animation: text 1s, linear forwards;
+          animation: text 1s, linear forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.textl3 {
+  -webkit-animation: text 1s, linear forwards;
+          animation: text 1s, linear forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.textl4 {
+  -webkit-animation: text 1s, linear forwards;
+          animation: text 1s, linear forwards;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  color: #f00404;
+  background-color: #c0bfbf;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+@-webkit-keyframes text {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -25px);
+            transform: translate(0px, -25px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -25px);
+            transform: translate(0px, -25px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
